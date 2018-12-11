@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}   
+.teto{
+    background: #000;
+    height: 53px;
+    width: 100%;
+    border-bottom: 3px solid #F15A24;
+    
+    z-index: 9;
+}
+
+.carfel img {
+    position: relative;
+    left: 47%;
+    top: 10px;
+    
+}
+
+.cadastrar{
+    position: absolute;
+    right: 180px;
+    width: 93px;
+    height: 30px;
+    top: 10px;
+    background: #c11605;
+    outline: none;
+    border: 0px solid;
+    color: #fff;
+    font-family: segoe ui;
+    font-weight: bold;
+    border-radius: 10px;
+    list-style-type: none;
+}
+.cadastrar a{
+    color: #fff;
+}
+.cadastrar:hover{
+    background: #c04135;
+    text-shadow: 1px 1px #000;
+}
+.llogar{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    background: #08bc21;
+    outline: none;
+    border: 0px solid;
+    color: #fff;
+    width: 93px;
+    height: 30px;
+    font-family: segoe ui;
+    font-weight: bold;
+    border-radius: 10px;
+    list-style-type: none;
+}
+.llogar a{
+    color: #fff;
+}
+.llogar:hover{
+    background: #066d14;
+    text-shadow: 1px 1px #000;
+}
+.verif{
+    position: absolute;
+    right: 330px;
+    top: 10px;
+    background: #fc7c04;
+    outline: none;
+    border: 0px solid;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    font-family: segoe ui;
+    font-weight: bold;
+    border-radius: 10px;
+    list-style-type: none;
+    z-index: 2;
+}
+.verif a{
+    color: white;
+}
+.verif:hover{
+    background: #ee8d32;
+    text-shadow: 1px 1px #000;
+}
+#menu{
+    height: 650px;
+    width: 200px;
+    background-color: #1d1d93;
+    position: relative;
+    top:50px;
+    z-index: 4;
+    position: fixed;
+}
+#menu ul{
+    padding: 15px;    
+
+}
+#menu ul li {
+  
+    padding: 30px;
+    list-style-type: none;
+    
+}
+#menu a{
+
+   color: #fff;
+   font-family: tw cen mt;
+    font-size: 15pt;
+}
+#menu ul li a:hover{
+    color: rgb(255, 219, 58);
+}
+.fechar{
+    display: none;
+}
+#botao {
+    color: #fff;
+    transform: translateY(-30px);
+    
+    position: relative;
+    left: 10px;
+}
+#botao:hover{
+    color: aqua;
+}
+
+#outroButao{
+    color: white;
+    transform: translateX(180px);
+}
+#outroButao:hover{
+    color: orange;
+
+}
+
+
+.logo img{
+    animation-iteration-count: infinite;
+    animation-name: logo;
+    animation-duration: 5s;
+    position: relative;
+    top: -20px;
+    left: 60px;
+
+}
+
+@keyframes logo{
+    0%{
+        transform: rotateY(45deg)
+    }
+    25%{
+        transform: rotateY(90deg)
+    }
+    50%{
+        transform: rotateY(180deg)
+    }
+    75%{
+        transform: rotateY(270deg)
+    }
+    100%{
+        transform: rotateY(360deg)
+    }
+}
+@media screen and (max-width:960px){
+    .carfel img{
+        left: 20%;
+    }
+}
+@media screen and (max-width:400px){
+    .teto{
+        height: 150px;
+    }
+    .carfel img{
+        left: 35%;
+    }
+    .cadastrar{
+        top: 90px;
+        width: 70px;
+        font-size: 10pt;
+        transform: translateX(20px) ;
+    }
+    .llogar{
+        top: 90px;
+        width: 70px;
+        font-size: 10pt;
+        transform: translateX(-10px) ;
+    }
+    .verif{
+        top: 90px;
+        width: 80px;
+        font-size: 10pt;
+        transform: translateX(60px) ;
+        font-size: 8pt;
+    }
+    #menu{
+        width: 400px;
+        
+    }
+    #menu ul li{
+        padding: 45px;
+    }
+    #menu a{
+        font-size: 18pt;
+    }
+    .logo img{
+        display: none;
+    }
+    
+}

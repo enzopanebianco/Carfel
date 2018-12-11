@@ -1,0 +1,98 @@
+@using Projeto.CheckPoint.Models;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/admin.css" />
+    <script src="/JS/main.js"></script>
+</head>
+<body>
+    
+    <section class="teto">
+        <div class="carfel">
+        <img src="/imagem/Ativo 3.png">
+        </div>
+        <label >
+            <div id="botao">
+            <i class="fas fa-bars"  onclick="mostrar(menu)"></i>
+           </div>
+            
+                         <button class="index" ><a href="/Pages/Index">Index</a></button>
+             
+            
+        </label>
+            <div id="menu" class="fechar">
+                 <i class="fas fa-times" onclick="desligar(menu)" id="outroButao"></i>
+                 <ul>
+          
+            <li>
+   
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">SAC</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">SOBRE NÓS</a>
+            </li>
+
+        </ul>
+             <div class="logo" style="animation-name: img">
+               <img src="/imagem/r0j6UUS - Imgur.png" alt="Logo do Produto"> 
+            </div>
+            </div>
+    </section>
+    
+   <section class="corpo">
+    <h1>Página Administrador</h1>
+    <hr>    
+    <img src="/imagem/Ativo 4.png">
+    <h2>Comentários</h2>
+     <table class="comentarios">
+      
+      
+        @foreach(ComentarioModel c in ViewData["Comentarios"] as List<ComentarioModel>){
+        <tr class="caixa">
+            <td class="nome">
+                @c.Nome
+            </td>
+            
+            <td class="comen">
+                @c.Comentario
+            </td>
+            <td class="data">
+                @c.dataComentario.ToShortDateString()
+            </td>
+            <td>
+               <button class="Rejeitar" > <a href="/Comentario/Excluir?id=@c.IdComentario">Rejeitar</a></button>
+               <button class="Aprovar">  <a href="/Comentario/ListarAprovados?id=@c.IdComentario">Aprovar</a></button>
+            </td>
+           
+        </tr>
+                
+        }
+   </table> 
+    </body>
+    </section>
+    
+    <footer>
+            <section>
+                <div class="chao">
+                    <h4>Desenvolvido por Enzo Romano Panebianco ©</h4>
+                    <p>E-mail:panebianco.enzo@yahoo.com.br </p>
+                    
+                    <a href="#">
+                    <img src="/imagem/Facebook_Home_logo_old.svg.png" alt="facebook da empresa">
+                    </a>
+                    <img src="/imagem/instagram-colourful-icon.png" alt="instagram da empresa">
+                </div>
+              
+            </section>
+        </footer>
+</html>

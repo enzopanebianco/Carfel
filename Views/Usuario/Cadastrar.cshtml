@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @{
+        Layout="MasterPageDeslogado";
+    }
+    @ViewBag.Mensagem
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen"  />
+    <link rel="stylesheet" href="/css/cadastro.css" />
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="principal" > 
+        <div id="branco"></div>
+    <form action="/Usuario/Cadastrar" method="POST" class="cadastro">
+    <label>
+        <h1>CADASTRO</h1>
+
+        <a>Nome</a>
+        <input type="text" name="nome" required="true">
+    </label>
+    <label>
+        <a>Email</a>
+        <input type="email" name="email" required="true">
+    </label>
+    <label>
+        <a>Senha</a>
+        <input type="password" name="senha" required="true">
+    </label>
+     <button class="ccadastrar">Cadastrar</button>
+    </form>
+    </section>
+</head>
+<body>
+    
+</body>
+</html>

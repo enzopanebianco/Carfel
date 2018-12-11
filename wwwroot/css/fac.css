@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    resize: none;
+    outline: none;
+}
+
+.titulo h1{
+    text-align: center;
+    position: relative;
+    font-size: 48pt;
+    color: #1d1d93;
+    top:  80px; 
+    font-family: segoe ui;
+    font-weight: 700;
+}
+.textarea{
+    background: #ffffff;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #1d1d93;
+    width: 600px;
+    height: 60px;
+    text-align: center; 
+    position: relative;
+    left: 450px;
+    font-size:21pt;
+    color: 626263;
+    font-family: segoe ui;
+
+    
+}
+.frequentes h2{
+    text-align: center;
+    font-family: segoe ui light;
+    font-size: 25pt;
+    color: #1d1d93;
+
+
+}
+.bg{
+    background: #1d1d93;
+    width: 700px;
+    height: 220px;
+    margin-left: 400px;
+    padding: 0.5em;
+    font-size: 12pt;
+    color: #f1f1f1;
+    font-family: segoe ui;
+    font-style: italic;
+    border: 3px solid;
+    border-color: #0e0e49;
+   
+}
+.perguntas{
+   padding: 3em;
+  
+   display: inline; 
+
+}
+
+
+.chao{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(59, 59, 59);
+}
+.chao p{
+    color: #f1f1f1;
+    font-family: tw cen mt;
+    font-size: 1.2em;
+    position: absolute;
+    right: 0;
+
+}
+.chao img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 2px;
+}
+.chao h4{
+    color: #fff;
+    font-family: tw cen mt;
+    font-size: 1.2em;
+    position: absolute;
+    right: 600px;
+
+}
+@media screen and (max-width:960px){
+    
+    .textarea{
+        background: #ffffff;
+        border: 1.2px solid;
+        border-radius: 10px;
+        border-color: #1d1d93;
+        width: 500px;
+        height: 90px;
+        text-align: center; 
+        position: relative;
+        left: 220px;
+        font-size:26pt;
+        color: 626263;
+        font-family: segoe ui;
+        font-size: 21pt;
+    }
+    .bg{
+        background: #1d1d93;
+        width: 700px;
+        height: 270px;
+        margin-left: 100px;
+        padding: 0.5em;
+        font-size: 12pt;
+        color: #e7e7e7;
+        font-family: segoe ui;
+        font-style: italic;
+        border: 3px solid;
+        border-color: #0e0e49;
+       
+    }
+
+    .chao h4{
+          left: 200px;
+          right: 0;   
+          font-size: 12pt;
+      }
+    .chao p{
+          font-size: 12pt;
+      }
+
+    
+}
+@media screen and (max-width:400px){
+    
+    .titulo h1{
+        font-size: 36pt;
+    }
+    .textarea{
+        background: #ffffff;
+        border: 1.2px solid;
+        border-radius: 10px;
+        border-color: #1d1d93;
+        width: 270px;
+        height: 40px;
+        text-align: center; 
+        position: relative;
+        left: 30px;
+        font-size:26pt;
+        color: 626263;
+        font-family: segoe ui;
+        font-size: 18pt;
+    }
+    .frequentes h2{
+        font-size: 18pt;
+    }
+    .bg{
+        background: #1d1d93;
+        width: 280px;
+        height: 370px;
+        margin-left: 20px;
+        padding: 0.5em;
+        font-size: 12pt;
+        color: #e7e7e7;
+        font-family: segoe ui;
+        font-style: italic;
+        border: 3px solid;
+        border-color: #0e0e49;
+       
+    }
+    .chao img{
+        height: 15px;
+        width: 15px;
+    }
+    .chao h4{
+        font-size: 9pt;
+        left: 80px;
+    }
+    .chao p{
+       display: none;
+    }
+}

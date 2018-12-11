@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @{
+        Layout="MasterPageDeslogado";
+    }
+    @ViewBag.Mensagem
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/login.css" />
+    <br>
+    <br>
+    <br>
+    <br>
+</head>
+    <section class="principal">
+        <div id="branco"></div>
+            <form action="/Usuario/Logar" method="POST" class="loogar">
+   <h1> LOGIN</h1>
+   <br>
+   
+    <label>
+        <a>Email</a>
+        <input type="email" name="email" required="true">
+    </label>
+    <label>
+        <a>Senha</a>
+        <input type="password" name="senha" required="true">
+    </label>
+     <button class="lllogar" type="submit">Login</button>
+    </form>
+    </section>
+
+
+</html>

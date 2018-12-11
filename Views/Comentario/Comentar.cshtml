@@ -1,0 +1,79 @@
+@using Projeto.CheckPoint.Models;
+<!DOCTYPE html>
+<html>
+<head>
+   @{
+        Layout="MasterPageDeslogado";
+    }
+    @ViewBag.Mensagem
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/comentario.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+     <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <section class="meio">
+   
+    
+    <h1>COMENTÁRIOS SOBRE O PRODUTO</h1>
+    <br>
+     <table>
+        @foreach (ComentarioModel a in ViewData["ComentariosAprovados"] as List<ComentarioModel>)
+        {
+           
+             <div class="tabela">   
+            <tr>
+             <td class="nome">
+                @a.Nome:
+            </td>
+            
+            <td class="comentario">
+                @a.Comentario
+                
+            </td>
+            <td class="data">
+                @a.dataComentario.ToShortDateString()
+                <hr>
+                 
+            </td>
+           
+            </tr>
+             </div>
+        }
+        </table>
+         
+        
+</body>
+<form action="/Comentario/Comentar" method="POST">
+
+<label>
+    <textarea placeholder="Digite seu Comentário" name="comentario"></textarea>
+</label>
+<br>
+<br>
+
+<div class="BUTAO">
+<button type="submit"><a>ENVIAR</a></button>
+</div>
+  </section>
+</form>
+
+   <div class="icone1">
+       <img src="/imagem/icone3.jpg">
+   </div>
+    <div class="icone2">
+       <img src="/imagem/icone.jpg">
+   </div>
+
+
+</html>

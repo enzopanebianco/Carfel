@@ -1,0 +1,65 @@
+@using Projeto.CheckPoint.Models;
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/estilo2.css" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="/JS/main.js"></script>
+</head>
+<body>
+    <section class="teto">
+        <div class="carfel">
+        <img src="/imagem/Ativo 3.png">
+        </div>
+        <div class="secreto">
+        <label >
+            
+            <i class="fas fa-bars" id="botao" onclick="mostrar(menu)"></i>
+           
+              <button class="verif" ><a href="/Usuario/Verificação">Administrador</a></button>
+            <button class="cadastrar" ><a href="/Usuario/Cadastrar">Cadastro</a></button>
+             <button class="llogar" ><a href="/Usuario/Logar">Login</a></button>
+            
+        </label>
+
+        </div>
+            <div id="menu" class="fechar">
+                 <i class="fas fa-times" onclick="desligar(menu)" id="outroButao"></i>
+                 <ul>
+          
+            <li>
+   
+                <a href="/Pages/Index">HOME</a>
+            </li>
+            <li>
+                <a href="/Pages/Sac">SAC</a>
+            </li>
+            <li>
+                <a href="/Pages/Faq">FAQ</a>
+            </li>
+            <li>
+                <a href="/Pages/Sobre">SOBRE NÓS</a>
+            </li>
+             <li>
+                <a href="/Comentario/Comentar">COMENTÁRIOS</a>
+            </li>
+
+        </ul>
+             <div class="logo" style="animation-name: img">
+               <img src="/imagem/r0j6UUS - Imgur.png" alt="Logo do Produto"> 
+            </div>
+            </div>
+           
+    </section>
+    
+     
+    @RenderBody()
+    
+</body>
+</html>

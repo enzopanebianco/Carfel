@@ -1,0 +1,94 @@
+.principal{
+   
+    background-image: linear-gradient(to right,#D42300,#FF931E);
+    width: 394px ;
+    height: 318px;
+    position: absolute;
+    left: 35%;
+    
+    z-index: 1;
+}
+#branco{
+    background: rgb(255, 255, 255);
+    width: 385px ;
+    height: 308px;
+    z-index: 0;
+    
+    transform: translateY(5px) translateX(4px);
+}
+
+.loogar{
+    display: inline-block;
+    padding: 110px;
+    top: -300px;
+    position: relative;
+}
+.loogar h1{
+    position: relative;
+    top: -60px;
+    font-family: tw cen mt;
+    font-weight: bold;
+    color: red;
+}
+.loogar label  {
+    position: relative;
+    top: -50px;
+    padding: 0px;
+}
+.loogar label a{
+    font-family: segoe ui;
+    font-weight: bold;
+    font-style: italic;
+}
+.loogar label input{
+   border:1px solid;
+    border-radius: 8px;
+    width: 180px;
+    height: 18px;
+
+}
+.lllogar{
+    
+    background: #08bc21;
+   
+    border: 0px solid;
+    color: #fff;
+    width: 93px;
+    height: 30px;
+    font-family: segoe ui;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.lllogar:active{
+    background: #045a0f;
+}
+@media screen and (max-width:960px){
+    .principal{
+        left: 35%;
+    }
+    #branco{
+        left: 35%;
+    }
+}
+@media screen and (max-width:400px){
+    .principal{
+        width: 264px;
+        height: 218px;   
+        left: 20%; 
+    }
+    #branco{
+        width: 255px ;
+        height: 208px;
+        left: 20%;
+    }
+    .loogar h1{
+        right: 30px;
+    }
+    .loogar label{
+        top: -20px;
+       right:  70px;
+    }
+    .lllogar{
+        transform: translateX(-50px);
+    }
+}

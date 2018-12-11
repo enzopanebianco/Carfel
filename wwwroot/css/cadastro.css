@@ -1,0 +1,86 @@
+.principal{
+  
+    background-image: linear-gradient(to right, #3F0285, #3F8BFF);
+    width: 394px ;
+    height: 318px;
+    position: absolute;
+    left: 35%;
+    z-index: 1;
+}
+#branco{
+    background: rgb(255, 255, 255);
+    width: 385px ;
+    height: 308px;
+    z-index: 0;
+    
+    transform: translateY(5px) translateX(5px);
+}
+
+.cadastro{
+    display: inline-block;
+    padding: 110px;
+    top: -300px;
+    position: relative;
+}
+.cadastro h1{
+    position: relative;
+    top: -40px;
+    font-family: tw cen mt;
+    font-weight: bold;
+    color: blue;
+}
+.cadastro label  {
+    position: relative;
+    top: -50px;
+    padding: 0px;
+}
+.cadastro label a{
+    font-family: segoe ui;
+    font-weight: bold;
+    font-style: italic;
+}
+.cadastro label input{
+   border:1px solid;
+    border-radius: 10px;
+
+}
+.ccadastrar{
+    
+    width: 93px;
+    height: 30px;
+    
+    background: #c11605;
+    outline: none;
+    border: 0px solid;
+    color: #fff;
+    font-family: segoe ui;
+    font-weight: bold;
+    border-radius: 10px;
+}
+@media screen and (max-width:960px){
+    .principal{
+        left: 35%;
+    }
+    #branco{
+        left: 35%;
+    }
+}
+@media screen and (max-width:400px){
+    .principal{
+        width: 264px;
+        height: 218px;   
+        left: 20%; 
+    }
+    #branco{
+        width: 255px ;
+        height: 208px;
+        left: 20%;
+    }
+    .cadastro label{
+        top: -20px;
+       right:  70px;
+    }
+    .ccadastrar{
+        transform: translateX(-50px);
+    }
+}
