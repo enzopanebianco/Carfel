@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\52742298835\\Desktop\\Projetao\\Projeto.CheckPoint\\Projeto.CheckPoint.csproj",
+      "projectUniqueName": "C:\\Users\\52742298835\\Desktop\\Carfel\\Projeto.CheckPoint.csproj",
       "projectName": "Projeto.CheckPoint",
-      "projectPath": "C:\\Users\\52742298835\\Desktop\\Projetao\\Projeto.CheckPoint\\Projeto.CheckPoint.csproj",
+      "projectPath": "C:\\Users\\52742298835\\Desktop\\Carfel\\Projeto.CheckPoint.csproj",
       "packagesPath": "C:\\Users\\52742298835\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\52742298835\\Desktop\\Projetao\\Projeto.CheckPoint\\obj\\",
+      "outputPath": "C:\\Users\\52742298835\\Desktop\\Carfel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

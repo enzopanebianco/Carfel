@@ -198,6 +198,7 @@
     }
     #menu{
         width: 400px;
+        height: 670px;
         
     }
     #menu ul li{
@@ -205,6 +206,9 @@
     }
     #menu a{
         font-size: 18pt;
+    }
+    #outroButao{
+        transform: translateX(330px);
     }
     .logo img{
         display: none;

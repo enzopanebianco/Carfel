@@ -317,7 +317,7 @@
 @media screen and (max-width:400px){
     
     .banner img{
-        filter: brightness(10%);
+        filter: brightness(30%);
         border-bottom: 2px solid orange;
     }
     .texto{
@@ -334,7 +334,7 @@
         transform: translateX(20px);
     }
     .plano{
-        border-top: 2px solid  #F15A24;
+        border-top: 3px solid  #F15A24;
         height: 1400px;
         
         text-shadow: 1px 1px #000;
