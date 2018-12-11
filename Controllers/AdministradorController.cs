@@ -12,7 +12,17 @@ namespace Projeto.CheckPoint.Controllers
         public IActionResult  Administrar(){ 
             ComentarioRepositorio  rep = new  ComentarioRepositorio();
             ViewData["Comentarios"] =  rep.Listar().Where(comentario => comentario.Tipo == "EmEspera").ToList();
+            UsuarioModel usuario = new UsuarioModel();
+            usuario.Admin=bool.Parse(HttpContext.Session.GetString("TipoUsuario"));
+            if (usuario.Admin==false)
+            {
+                return RedirectToAction("Index","Pages");
+            }
+            else
+            {
+                
             return View();
+            }
         }
     
     }
